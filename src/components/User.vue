@@ -12,7 +12,7 @@
    <button @click = "insert()"> insert插入数据 </button>
    <button @click = "update()"> update插入数据 </button>
    <button @click = "delete1()"> delete插入数据 </button>
-
+   <iframe v-show="iframeState" id="show-iframe"  frameborder=0 name="showHere" scrolling=auto src="http://10.28.85.149:8080?username=admin&password=Clio$123&embedFlag=hideToolbar#query/open//summary/summaryKPI_2019.saiku"></iframe>
 </div>
 
 </template>
@@ -26,7 +26,8 @@ export default {
     return {
      msg:  "Welcome to my vue.",
      username: '',
-     password: ''
+     password: '',
+     iframeState:true,
     }
   },
 
